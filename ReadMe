@@ -1,0 +1,23 @@
+    <build>
+        <!--项目打包时会将java目录中的*.xml文件也进行打包-->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+       </build>
+
+
+
+
+       mybatis-plus:
+         configuration: #sql日志
+           log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+         mapper-location: classpath:com/atguigu/paymentdemo/mapper/xml/*.xml
+
+
+3：         @CrossOrigin  //开放前端的跨域访问  不同端口号

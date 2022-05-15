@@ -12,5 +12,9 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/payment_demo?serverTimezone=GMT%2B8&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/payment_demo
     driver-class-name: com.mysql.jdbc.Driver
+mybatis-plus:
+  configuration: #sql»’÷æ
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-location: classpath:com/atguigu/paymentdemo/mapper/xml/*.xml
