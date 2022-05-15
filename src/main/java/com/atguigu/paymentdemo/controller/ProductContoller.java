@@ -16,6 +16,7 @@ public class ProductContoller {
     @ApiOperation("测试接口")
     @GetMapping("/test")
     public String test() {
+        System.out.println("测试");
         return "hello";
     }
 }
