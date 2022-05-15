@@ -1,6 +1,16 @@
+server:
+  port: 8090
+
 spring:
   application:
     name: payment-demo #应用的名字
 
-server:
-  port: 8090
+  Jackson:
+    data-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/payment_demo?serverTimezone=GMT%2B8&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
